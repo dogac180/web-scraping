@@ -5,9 +5,9 @@ import pandas as pd
 from selenium import webdriver
 import pdb
 
-driver = webdriver.Chrome(executable_path=r'/Users/Elma/Desktop/chromedriver')
-directory = r"/Users/Elma/Desktop/LASTİTEMS"
-data = pd.read_excel(r'/Users/Elma/Desktop/LEFTOVERSFROMSCRAPİNG.xlsx')
+driver = webdriver.Chrome(executable_path=r'chrome-pathway')
+directory = r"folder"
+data = pd.read_excel(r'pathway-for-excel_file')
 df = pd.DataFrame(data, columns= ['ÜRÜN ADI'])
 items_list = df.to_numpy()
 
